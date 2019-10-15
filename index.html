@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Lousy Login Form</title>
+                <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+<style>
+img {
+  border-radius: 50%;
+}
+</style>
+<style>
+      body {
+        font-family: 'Share Tech Mono', monospace;
+	      font-family: 'Share Tech Mono', monospace;
+	      font-size:!20px;
+    }
+</style>
+	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"><img src="assets/css/images/bg.jpg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+					<!--header id="header"-->
+						<span class="icon">
+						<h2>Login Form</h2>
+					</span>
+					<div>
+						  <form name="login" method="POST" data-netlify="true">
+						  <p>
+						    <label>Username: <input type="text" name="username" /></label>
+						  </p>
+						  <p>
+						    <label>Password: <input type="password" name="password" /></label>
+						  </p>
+						    <center><button type=”submit”>Login</button></center>
+						  <p>
+						    <div data-netlify-recaptcha="true"></div>
+						 </p>
+						</form>
+					</div>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; Astitva Nikose 2019</span>
+					</footer>
+        </div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+			<script type="text/javascript" src="https://r3m4g.github.io/aboutme2/assets/js/scrurl.js"></script>
+		<script>
+			var isFocused = true;
+			scroll();
+
+			function scroll() {
+				Scrurl.display(document.location.search && document.location.search.startsWith("?@") ? document.location.search.substring(2) : "..........Made_With_3>_By_z3k3..........", {
+					"scrolldelay": 200,
+					"scrollamount": 1,
+					"direction": "left"
+				});
+			}
+			window.onfocus = function() {
+				if (!isFocused) {
+					isFocused = true;
+					scroll();
+				}
+			};
+			window.onblur = function() {
+				if (isFocused) {
+					isFocused = false;
+					Scrurl.display(null);
+				}
+			};
+		</script>
+		<script src="//instant.page/1.2.1" type="module" integrity="sha384-/IkE5iZAM/RxPto8B0nvKlMzIyCWtYocF01PbGGp1qElJuxv9J4whdWBRtzZltWn"></script>
+	</body>
+</html>
